@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/signal.png">
+    <title>Bienvenida</title>
+<style>
+    /*Efecto de bienvenida*/
+    body{
+        background-color: rgb(255, 244, 252);
+        }
+
+    .card{
+        margin-top: 30vh;
+        border: none;
+        text-align: center;
+        background-color: rgb(255, 244, 252);
+        }
+
+.card-title{
+        text-align: center;
+        color: white;
+        font-family: "Sofia", cursive;
+        font-size: 7em;
+        background-image: linear-gradient(-250deg, #FFEECC 0%, #FFDDCC 50%, #FFCCCC 60%, #FEBBCC 100%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text ;
+        animation: bgText 3.5s linear infinite;
+        }
+
+@keyframes bgText {
+    to{
+        background-position: 200% center
+    }
+    
+}
+
+.card-text{
+        font-family: "Urbanist", sans-serif;
+        font-size: 15px;
+        text-align: center;
+
+    }
+
+.btn{
+        border: none;
+        outline: none;
+        background-color: #FEBBCC;
+        padding: 10px 15px;
+        color: black;
+        font-family: "Urbanist", sans-serif;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+.btn:hover{
+        color: rgb(255, 255, 255);
+        background-color: #FEBBCC;
+    }
+
+@media (max-width:490px){
+    .card-title{
+        font-size: 3em;
+
+    }
+    .card{
+        margin-top: 35vh;
+
+    }
+}
+
+</style>
+    
+</head>
+<body>
+    <div class="container-fluid"> <!--Contenedor queabarca todo el ancho de la pantalla-->
+        <div class="row">
+  <div class="col-sm-12 mb-3 mb-sm-0 ">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">Welcome</h1>
+        <p class="card-text">Donde maullamos toda la noche y dormimos todo el dia.</p>
+        <a href="./perfil.html" class="btn">explore</a>
+      </div>
+    </div>
+  </div>
+    </div>
+    </div>
+
+    <script src="./js/main.js" refered></script>
+
+<!--Ligas de Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

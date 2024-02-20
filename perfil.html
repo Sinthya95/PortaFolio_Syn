@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/signal.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Perfil</title>
+   <style>
+    
+.fullscreen-video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1000; }
+
+.container{
+    margin-top: 5vh;
+    background-color: #ffffffaf;
+    border-radius: 25px; }
+
+.card{
+    margin-left: -1.6vh;
+    /*Renamed .float-left and .float-right to .float-start and .float-end.*/
+    border-radius: 25px 0 0 25px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #FFDDCC; }
+
+ .img-fluid{
+
+    border-radius: 10px;
+    margin-top: 1.5vh;}
+
+.overflow-auto{
+    width: 350vh;
+    height: 250vh;
+    border: none;
+    overflow: visible;}
+
+p{
+    padding-right: 9px;
+    text-align: justify; }
+
+.circulo1{
+    color: #FFEECC;
+    flex-direction: row;}
+
+.circulo2{
+    color: #FFDDCC;
+    flex-direction: row;}
+
+.circulo3{
+    color: #FFCCCC;
+    flex-direction: row;}
+
+.circulo4{
+    color: #FEBBCC;
+    flex-direction: row;}
+
+.decoracion{
+    display: flex;
+    justify-content: left;
+    margin-top: 4vh;}
+
+.informacion{
+    color:   rgb(83, 83, 83);
+    padding-top: 13vh;
+    text-align: center;
+    font-family:  "Sofia", cursive;}
+
+audio{
+    padding-top: 1vh;
+    align-content: center;
+    width: 200px;
+    height:20px ;}
+
+.nav-item{
+        position: relative; /*respeta las propiedades*/
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin-left: 40px;}
+     
+.nav-item::before{
+        content:" ";/*se pone en el before*/
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px ;
+        background-color: rgb(255, 255, 255);
+        transition: 0.3s;}
+
+.nav-item:hover::before{
+        width: 50%;
+        align-content: center;}
+
+
+
+@media (max-width:768px){
+
+.img-fluid{
+    padding-top: 5vh; 
+}
+.card2{
+    overflow: scroll;
+    width: 250px;
+    height: 200px;
+    font-size: 12px;
+}
+.informacion{
+    padding-top: 3vh;
+
+}}
+
+@media (max-width:576px){
+
+.img-fluid{
+    padding-top: 5vh; 
+}
+.card2{
+    overflow: scroll;
+    width: 150px;
+    height: 200px;
+    font-size: 12px;
+}
+.informacion{
+    padding-top: 3vh;
+
+}
+}
+@media (max-width:425px){
+
+.img-fluid{
+    padding-top: 10vh; 
+}
+.card2{
+    overflow: scroll;
+    width: 150px;
+    height: 150px;
+    font-size: 12px;
+}
+.informacion{
+    padding-top: 4vh;
+    font-size: 10px;
+
+}
+h1{
+font-size: 15px;
+}
+
+.container{
+    margin-top: 15vh;
+    margin-left: 4vh;
+}
+ 
+.card{
+a{
+    font-size: 12px;
+    text-align: center;
+}
+
+}
+}  
+@media (max-width:425px){
+.img-fluid{
+    display: none;
+}
+}
+@media (max-width:1024px){
+
+.img-fluid{
+    padding-top: 5vh;
+}
+
+.informacion{
+    padding-top: 4vh;
+    font-size: 10px;
+
+}
+}
+
+    
+
+
+   </style>
+
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted class="fullscreen-video">
+          <source src="./img/fondo.mp4" type="video/mp4">
+        </video>
+    <div class="container" ><!--Contenedor principal-->
+       
+       <div class="row">
+        <div class="col A">
+            <div class="card" >
+                
+                <img src="./img/signal0.png" class="card-img-top" alt="...">
+                <div class="card-body B">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="./perfil.html" style="color: rgb(83, 83, 83);">Trayectoria</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#" style="color: rgb(83, 83, 83);">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"style="color: rgb(83, 83, 83);">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"style="color: rgb(83, 83, 83);">CV</a>
+                        </li>
+                       
+                       
+                      </ul>
+                      
+               
+                </div>
+                
+              </div>
+
+        </div>
+        <div class="col" >
+            <div class="informacion">
+                <H1>Trayectoria</H1>
+            </div>
+              <div class="decoracion">
+                    <p class="circulo1"> ⬤ </p>
+                    <p class="circulo2">⬤ </p>
+                    <p class="circulo3"> ⬤ </p>
+                    <p class="circulo4">⬤ </p>
+
+                </div>
+                <div class="card2">
+                    <div class="card-body">
+                <p >Realicé diversos cursos y proyectos 
+                    uno de los proyectos fue el proyecto profesional, el cual consistió en el Diseño e Implementación 
+                    de un sitio web para la gestión académica y el registro de 
+                    asistencia mediante un código QR, dirigido a mi instutucion
+                </p>
+                <p>
+                    Participe en la organización de un evento en mi institucion
+                    academica. Mi rol implicaba tareas administrativas y contribuciones en la 
+                    planificación, coordinación y promoción de la EXPOCOMPUTO-2023, en 
+                    colaboración con compañeros, docentes y jefes de la academia de 
+                    computación.
+                </p>
+        
+                    </div>
+                  </div>
+  
+
+        </div>
+        <div class="col">
+            
+            <img src="./img/FOTO2.png" class="img-fluid "  alt="...">
+
+        </div>
+       </div>
+
+       
+        
+      </div>
+      </div>
+   
+
+
+ <!--Ligas de Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>   
+</body>
+</html>
